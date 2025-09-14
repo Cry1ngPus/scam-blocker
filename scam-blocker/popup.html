@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>反詐騙</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="container">
+    <div id="loading" class="status-box">
+      <div class="spinner"></div>
+      <p>正在偵測中...</p>
+    </div>
+
+    <div id="safe" class="status-box hidden">
+      <div class="icon-circle safe">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+        </svg>
+      </div>
+      <h2>安全網站</h2>
+      <p>這個網站沒有偵測到詐騙或釣魚風險。</p>
+    </div>
+
+    <div id="danger" class="status-box hidden">
+      <div class="icon-circle danger">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+      </div>
+      <h2>疑似詐騙網站！</h2>
+      <p><b>警告：</b>這個網站可能有詐騙風險，請小心！</p>
+    </div>
+
+    <div id="info" class="hidden">
+      <h3>偵測結果：</h3>
+      <p id="result-details"></p>
+    </div>
+
+    <button id="report-button">回報此網站</button>
+    
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

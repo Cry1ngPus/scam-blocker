@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "scam-blocker",
+  "version": "1.0",
+  "description": "即時偵測可疑的詐騙與釣魚網站。",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://www.virustotal.com/",
+    "http://localhost:3000/"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "scam/icon16.ico",
+      "48": "scam/icon48.ico",
+      "128": "scam/icon128.ico"
+    }
+  }
+}
