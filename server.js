@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 // 將你的 API 金鑰儲存在這裡，這是最安全的地方
-const VIRUSTOTAL_API_KEY = '1f434a095471031e63429a61d41c0e03011803f33affc06516e896fefcba96f5';
+const VIRUSTOTAL_API_KEY = 'UR-API-KEY';
 
 // 使用 CORS 中介軟體，允許來自任何來源的請求
 app.use(cors());
@@ -81,4 +81,5 @@ app.post('/report-scam', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Proxy server is running on http://localhost:${port}`);
+
 });
