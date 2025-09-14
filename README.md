@@ -34,18 +34,20 @@ Open your terminal (or command prompt) and use the cd command to navigate to the
 Enter the following commands to initialize the project and install the necessary packages:
 
 Bash
-
+'''
 npm init -y
 npm install express cors
 Configure server.js
-
+'''
 Download the server.js file from this project and move it into the api-proxy folder.
 
 Open server.js and insert your VirusTotal API key into the designated variable:
 
 JavaScript
-
+'''
 const VIRUSTOTAL_API_KEY = 'YOUR-API-KEY-HERE';
+'''
+
 Start the Server
 
 Make sure you are still in the terminal within the api-proxy folder.
